@@ -1,0 +1,14 @@
+.time{
+    height: 2.5rem;
+    display: flex;
+}
+.time div{
+    height: 2.5rem;
+    flex: 1;
+    text-align: center;
+}
+.time div img{
+    width: 1.0rem;
+    height: 1.0rem;
+    padding: 0.4rem;
+}

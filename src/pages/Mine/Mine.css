@@ -1,0 +1,152 @@
+.mine header {
+    height: 4rem;
+    background: #ff9900;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mine header .set {
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url(../../assets/img/set.png) no-repeat;
+    background-size: contain;
+    text-align: center;
+    margin: 0.24rem;
+}
+
+.mine header .msg {
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url(../../assets/img/news.png) no-repeat;
+    background-size: contain;
+    margin: 0.26rem;
+    position: relative;
+}
+
+.mine header span {
+    line-height: 1rem;
+    color: #fff;
+    font-size: 0.4rem;
+}
+
+.mine header .top a{
+    color: rgba(242, 241, 241, 0.865);
+    font-size: 0.3rem;
+    position: relative;
+    top: -0.35rem;
+    left: -0.1rem;
+}
+.set-avator {
+    height: 1.0rem;
+  }
+.set-avator input {
+    height: 1.8rem;
+    width: 1.8rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 5;
+    opacity: 0;
+  }
+
+
+.mine img {
+    width: 1.8rem;
+    height: 1.8rem;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+
+.mine .name {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0.2rem 0;
+}
+
+.mine .collect {
+    height: 0.4rem;
+    padding: 0.4rem;
+    background-color: #fff; 
+     margin: 0.1rem 0;
+}
+.mine .collect span{
+    padding-left: 0.2rem;
+    font-size: 0.3rem;
+}
+
+.mine .collect i {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: url(../../assets/img/keep.png) no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+
+.mine .collect1 {
+    height: 0.4rem;
+    padding:  0.4rem;
+    background-color: #fff;
+  
+}
+.mine .collect1 p {
+    float: left;
+    margin-left: 0.7rem;
+    font-size: 0.3rem;
+}
+
+.mine .collect1 span.order {
+    float: right;
+    font-size: 0.3rem;
+    color: #a5a5a5;
+}
+
+.mine .content {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    line-height: 0.5rem;
+    border-top: 1.0px solid rgb(184, 184, 184);
+    padding-top: 0.4rem;
+    background-color: #fff;
+    margin-bottom: 0.1rem;
+}
+.mine .content .express i{
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: url(../../assets/img/icon_refund.png) no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+    position: relative;
+}
+.mine .content .has::after{
+    display: inline-block;
+    content: "99";
+    width: 0.36rem;
+    height: 0.36rem;
+    background-color: red;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    left: 0.24rem;
+    top: -0.20rem;
+    font-size: 0.18rem;
+    line-height: 0.36rem;
+}
+.mine .adress{
+    height: 0.4rem;
+    padding:  0.4rem;
+    background-color: #fff;
+    font-size: 0.3rem;
+}
