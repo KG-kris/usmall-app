@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { cartList, requestCartListAction, changeCheckedAction, changeOneCheckedAction } from '../../store'
 import cart from "../../assets/img/tab_shopping_nor.png"
 import { filterPrice } from "../../filter"
+import { successAlert } from "../../util/alert"
 import { requestEditCart, requestDelCart } from '../../util/request'
 import { Modal, Button, Toast } from "antd-mobile"
 class Cart extends Component {
@@ -83,7 +84,7 @@ class Cart extends Component {
                     text: '确定',
                     onPress: () => {
                         requestDelCart({ id: id }).then(res => {
-                            Toast.info(res.data.msg)
+                            successAlert(res.data.msg)
                         })
                         alertInstance.close();
                         let uid = sessionStorage.getItem("uid")
@@ -175,7 +176,6 @@ class Cart extends Component {
 }
 
 const mapStateToProps = (state) => {
-    // console.log(state);
     return {
         cartList: cartList(state)
     }

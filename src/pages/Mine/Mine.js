@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import "./Mine.css"
-import { Modal,Toast} from "antd-mobile"
+import { Modal} from "antd-mobile"
+import { successAlert } from "../../util/alert"
 
 export default class Mine extends Component {
 
@@ -38,7 +39,7 @@ export default class Mine extends Component {
                 {
                     text: '确定',
                     onPress: () => {
-                        Toast.info("退出成功")
+                        successAlert("退出成功")
                         this.props.history.push("/login")
                     }
                 },

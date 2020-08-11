@@ -3,8 +3,8 @@ import querystring from "querystring"
 import { requestAddCart } from '../../util/request'
 import "./Detail.css"
 import { filterPrice } from "../../filter"
-import { Toast } from "antd-mobile"
 import { connect } from 'react-redux'
+import { successAlert } from "../../util/alert"
 import { proDetail, requestProDetailAction } from '../../store'
 class ProDetail extends Component {
     constructor() {
@@ -48,12 +48,12 @@ class ProDetail extends Component {
             num: 1
         }).then(res => {
             if (res.data.code === 200) {
-                Toast.info(res.data.msg)
+                successAlert(res.data.msg)
                 this.setState({
                     show: !this.state.show
                 })
             } else {
-                Toast.info(res.data.msg)
+                successAlert(res.data.msg)
             }
         })
 

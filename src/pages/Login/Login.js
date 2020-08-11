@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from "react-router-dom"
 import "./Login.css"
 import { requestLogin } from '../../util/request'
-import { Toast } from "antd-mobile"
+import { successAlert } from "../../util/alert"
 export default class Login extends Component {
     constructor() {
         super()
@@ -24,11 +24,11 @@ export default class Login extends Component {
     login() {
         requestLogin(this.state.user).then(res => {
             if (res.data.code === 200) {
-                Toast.info(res.data.msg)
+                successAlert(res.data.msg)
                 sessionStorage.setItem("uid", res.data.list.uid)
                 this.props.history.push("/index")
             } else {
-                Toast.info(res.data.msg)
+                successAlert(res.data.msg)
             }
         })
     }
